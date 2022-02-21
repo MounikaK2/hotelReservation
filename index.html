@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+    <div>
     <form>
-       <p>Full Name <input type="text"></p>
-    </form>
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="mail">Email Id</label>
+        <input type="text" id="mail" name="mail"><br><br>
+
+        <label for="mobileNum">Mobile Number</label>
+        <input type="text" id="mobileNum" name="mobileNum"><br><br>
+
+        <label for="departDate">Departure Date/Time</label>
+        <input type="date" id="departDate" name="departDate">
+        <input type="time" id="departDate" name="departDate"><br><br>
+
+        <label for="returnDate">Return Date/Time</label>
+        <input type="date" id="returnDate" name="returnDate">
+        <input type="time" id="returnDate" name="returnDate"><br><br>
+
+        <label for="PickAddress">Pickup Address</label>
+        <textarea rows = "5" name = "PickAddress" id ="PickAddress">
+         </textarea><br><br>
+
+         <label for="destAddress">Destination Address</label>
+        <textarea rows = "5" name = "destAddress" id ="destAddress">
+         </textarea><br><br>
+
+         <label for="type">Journey Type</label>
+         <select name="type" id="type">
+           <option value="Car">Car</option>
+           <option value="Bus">Bus</option>
+           <option value="Bike">Bike</option>
+         </select>
+         <br><br>
+
+         <label for="PassNo">Number of Passengers</label>
+         <input type="number" name="PassNo" id="PassNo">
+         <br><br>
+
+         <label for="addMessage">Additional Message</label>
+        <textarea rows = "5" name = "addMessage" id ="addMessage">
+         </textarea><br><br>
+    </form></div>
 </body>
 </html>

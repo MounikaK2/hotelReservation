@@ -1,0 +1,10 @@
+textarea{
+    vertical-align: middle;
+}
+div {
+    margin: auto;
+  width: 70%;
+  border: 3px solid rgb(20, 18, 20);
+  padding: 10px;
+
+}
