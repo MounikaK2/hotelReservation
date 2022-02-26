@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="bg">
+        <h2>Allen Booking Form</h2><br>
+    <div class="container">
         <div class="box">
-    <form>
+    <form name="register" method="POST" action="#">
         <label for="fname">Full Name</label>
         <input type="text" id="fname" name="fname"><br><br>
 
@@ -29,11 +32,11 @@
         <input type="time" id="returnDate" name="returnDate"><br><br>
 
         <label for="PickAddress">Pickup Address</label>
-        <textarea rows = "5" name = "PickAddress" id ="PickAddress">
+        <textarea rows = "4" name = "PickAddress" id ="PickAddress">
          </textarea><br><br>
 
          <label for="destAddress">Destination Address</label>
-        <textarea rows = "5" name = "destAddress" id ="destAddress">
+        <textarea rows = "4" name = "destAddress" id ="destAddress">
          </textarea><br><br>
 
          <label for="type">Journey Type</label>
@@ -49,9 +52,10 @@
          <br><br>
 
          <label for="addMessage">Additional Message</label>
-        <textarea rows = "5" name = "addMessage" id ="addMessage">
+        <textarea rows = "3" name = "addMessage" id ="addMessage">
          </textarea><br><br>
-    </form></div>
+        <div class="button"><input type="button" class="btn" value="Submit" onclick="check()"></div>
+    </form></div></div>
 </div>
 </body>
 </html>
