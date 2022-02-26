@@ -1,10 +1,33 @@
+*{
+  padding: 0px;
+  margin:0px;
+}
+body,html{
+  height: 100%;
+  background-color: black;
+
+}
 textarea{
     vertical-align: middle;
 }
-div {
-    margin: auto;
+.box{
+  margin:auto;
   width: 70%;
   border: 3px solid rgb(20, 18, 20);
   padding: 10px;
-
+  background-color: rgb(247, 252, 252);
 }
+.bg{
+  background-image:url("https://assets.vogue.in/photos/6037808197a6d928a4e6eae7/16:9/w_1776,h_999,c_limit/Travel.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  opacity:0.8;
+}
+/* @media screen and (min-width: 400px){
+  div{
+    width: 50%;
+    background-color:rgb(177, 169, 159)
+  }
+} */
