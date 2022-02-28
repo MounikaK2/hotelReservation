@@ -24,8 +24,13 @@ function check(){
     var rHour=rl[0];
     var rMin=rl[1];
 
+    var day=0
+    var hour=0
+    var min=0
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (name==""){
+    var phoneno = /^\d{10}$/;
+    var nameVal=/^[a-zA-Z]+$/;
+    if (name=="" || !name.match(nameVal)){
         temp=0;
         document.getElementById("fname").style.border="2px solid red";
     }
@@ -33,7 +38,7 @@ function check(){
         document.getElementById("fname").style.border="0px";
     }
 
-    if (mn.length!=10){
+    if (mn.length!=10 || !mn.match(phoneno)){
         temp=0;
         document.getElementById("mobileNum").style.border="2px solid red";
     }
@@ -108,7 +113,11 @@ function check(){
                     if(dMin>rMin){
                         rt=false;
                     }
+                    
                 }
+            }
+            else{
+                day+=rTime.getDate()-dTime.getDate()
             }
             
         }
